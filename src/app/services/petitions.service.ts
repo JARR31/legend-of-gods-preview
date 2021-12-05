@@ -5,7 +5,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class PetitionsService {
   public headers = new HttpHeaders().set('content-type', 'application/json').set('Access-Control-Allow-Origin', '*');
-  public API = 'http://localhost:8080/api' ///'https://legendofgodsapi.azurewebsites.net/api'
+  public API = 'https://legendofgodsapi.azurewebsites.net/api'
   public Chapter_id = ""
   public Element:number = 1;  //Change to 1
   public Chapters_length = ''
