@@ -1,0 +1,108 @@
+* {
+    font-weight: 750;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#body{
+    width: 100%;
+}
+#chapter_body{
+    border-radius: 5px;
+    width: 50%;
+    margin-left: 25%;
+    background: white;
+}
+#title{
+    width: 100%;
+    text-align: center;
+    font-size: 150%;
+    color: black;
+}
+#chapter_view{
+    width: 100%;
+}
+#chapter_img{
+    background-image:url();
+    background-repeat: no-repeat;
+    background-attachment:unset;
+    background-size: 100% 100%;
+    width: 100%;
+}
+#buttons_div{
+    width: 100%;
+    text-align: center;
+
+}
+#buttons{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+.buttons_options{
+    float: left;
+    width: 48.3%;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(97,186,255,1) 0%, rgba(166,239,253,1) 90.1% );
+    border: 0px;
+    margin: 3px;
+    border-radius: 5px;
+}
+#chapter_selection{
+    background-color: transparent;
+    border: 0px;
+}
+#pages,#lenguajes{
+    background-color: transparent;
+    border: 0px;
+}
+.buttons_options:hover{
+    opacity: 1.8;
+}
+
+@media only screen and (max-width: 1000px) {
+    #chapter_body{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .buttons_options{
+        height: 2vh;
+    }
+    #title{
+        width: 95%;
+        margin-left: 2.5%;
+        font-size: 15px;
+    }
+    #chapter_img{
+        width: 70%;
+        margin-left: 15%;
+    }
+    #chapter_selection{
+        font-size: 90%;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 600px) {
+    #buttons{
+        font-size: 80%;
+    }
+    #body{
+        width: 100%;
+    }
+    #chapter_body{
+        width: 100%;
+        margin-left: 0px;
+    }
+    #title{
+        width: 95%;
+        margin-left: 2.5%;
+        font-size: 15px;
+    }
+    #chapter_img{
+        width: 97%;
+        margin-left: 1.5%;
+    }
+    #chapter_selection{
+        font-size: 90%;
+        text-align: center;
+    }
+}

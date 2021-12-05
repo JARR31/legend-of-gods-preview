@@ -1,0 +1,16 @@
+<div id="chapters_page">
+  <header></header>
+  <div id="body">
+    <div class="card" style="position: relative;" *ngFor="let x of Chapters" (click)="Play(x,'ES')">
+      <img class="card-img-top" id="chapter_img" src="{{x.Chapter_image}}">
+      <div id="languajes">
+        <h4 class="btn btn-success btn_lan" (click)="Play(x,'ES')">Español</h4><br>
+        <h4 class="btn btn-success btn_lan" (click)="Play(x,'EN')">English</h4>
+
+      </div>
+      <div id="chapter_info">
+        <h4>Capitulo 1</h4>
+      </div>
+    </div>
+  </div>
+  <footer></footer>

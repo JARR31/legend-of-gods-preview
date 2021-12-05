@@ -1,0 +1,36 @@
+<header></header>
+<div id="body">
+    <div id="chapter_body">
+        <div id="title">
+            <select id="chapter_selection" #chapter_selector (change)="select_chapter(chapter_selector.value)">
+                <option *ngFor="let x of All_chapters" value="{{x.Chapter_number}}">{{x.Chapter_fullname}}</option>
+            </select> 
+        </div>
+        <div id="chapter_view">
+            <img id="chapter_img" #chapter_img src="../../../../assets/blank.png">
+            
+        </div>
+        <div id="buttons_div">
+            <div id="buttons">
+                <button  class="buttons_options" (click)="change_page(false)">Anterior</button>
+                <button class="buttons_options" (click)="change_page(true)">Siguiente</button>
+                <div class="buttons_options">
+                    <label for="pages1">Pagina:</label>
+                    <select name="pages1" id="pages" #pages (change)="select_page(pages.value)">
+                      <option *ngFor="let x of Max_pages" value="{{x}}">{{x}}</option>
+                    </select> 
+                </div>
+                <div class="buttons_options">
+                    <label for="lenguajes1">Idioma:</label>
+                    <select name="lenguajes1" id="lenguajes" value="EN" #languaje_selector (change)="change_languaje(languaje_selector.value)">
+                      <option value="ES">Español</option>
+                      <option value="EN">Ingles</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+<footer></footer>
